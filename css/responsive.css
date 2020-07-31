@@ -1,0 +1,254 @@
+
+/* TABLETS */
+
+@media only screen and (min-width: 700px) {
+
+    /* FORMATION */
+
+    #formation .container {
+        background-image: url("../imagens/formation/books.png");
+        --background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: bottom 40% right 20px;
+    }
+
+    /* SKILLS */
+
+    #skills .container section {
+        width: 100%;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+
+    #skills h3 {
+        margin: 10px 0px;
+    }
+
+    #skills .container section div {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #skills .container section div:nth-child(odd) {
+        float: left;
+    }
+
+    #skills .container section div:nth-child(even) {
+        float: right;
+    }
+
+    /* PROJECTS */
+
+    #projects .container {
+        background-image: url("../imagens/portfolio/responsive.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: top 50% right 20px;
+    }
+
+}
+
+
+/* LAPTOP */
+
+@media only screen and (min-width: 769px) {
+
+    body#home .actionMenu {
+        display: none;
+    }
+
+    header {
+        display: block;
+        width: 100%;
+        background-color: rgba(44, 44, 44, 0.8);
+        color: white;
+        padding: 15px 0px;
+        text-transform: uppercase;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        font-weight: bold;
+    }
+
+    header .desktopMenu {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        display: inline;
+        padding-left: 25px;
+    }
+
+    header ul li a {
+        color: white;
+    }
+
+    header ul li a:hover {
+        color: #5fd2d8;
+    }
+
+    body#home main {
+        width: 75%;
+    }
+
+    body#home main h2 {
+        font-size: 24px;
+    }
+
+    body#home main a {
+        width: 220px;
+    }
+
+    body#home main div {
+        margin: 30px 0px;
+    }
+
+    /* NAVEGATION */
+
+    body#navegation header .desktopMenu {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    body#navegation header span a:hover {
+        color: #5fd2d8;
+    }
+
+    body#navegation header .hamburguer {
+        display: none;
+    }
+
+    body#navegation header ul {
+        display: block;
+    }
+
+    body#navegation header ul li {
+        display: inline;
+        padding-left: 25px;
+    }
+
+    body#navegation header ul li.active {
+        color: #FFA000;
+    }
+    
+    body#navegation header ul li a {
+        color: white;
+    }
+    
+    body#navegation header ul li a:hover {
+        color: #5fd2d8;
+    }
+
+    body#navegation .menuMobile {
+        display: none;
+    }
+
+    body#navegation .container {
+        width: 75%;
+        padding: 15px;
+    }
+
+    body#navegation .moldure {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* ABOUT ME */
+
+    body#navegation #aboutMe .moldure {
+        border: 3px solid #FFA000;
+    }
+
+    /* SKILLS */
+
+    body#navegation #skills .moldure {
+        border: 3px solid #35b5e6;
+    }
+
+    /* FORMATION */
+
+    body#navegation #formation .moldure {
+        border: 3px solid #FFA000;
+    }
+
+    /* PROJECTS */
+
+    #projects .container {
+        margin-top: 180px !important;
+    }
+    
+    #projects img {
+        width: 100%;
+        margin: -170px auto 0px;
+    }
+
+    #projects > div:nth-child(2) > section:nth-child(4) > p {
+        margin-top: 0px;
+    }
+
+    #projects .container {
+        width: 100%;
+        --overflow: auto;
+    }
+
+    #projects .container section {
+        width: 50%;
+    }
+
+    #projects .container section:nth-child(odd) {
+        float: left;
+    }
+
+    #projects .container section:nth-child(even) {
+        float: left;
+    }
+
+    #projects .container {
+        background-size: 250px;
+        background-position: bottom 20px right 20px;
+    }
+
+}
+
+/* DESKTOP */
+
+
+@media only screen and (min-width: 1400px) {
+
+    .desktopMenu {
+        max-width: 1300px;
+    }
+
+    body#home main {
+        max-width: 1300px;
+    }
+
+    body#home .head {
+        padding: 50px 10px;
+    }
+
+    body#home .lead {
+        padding: 40px 10px;
+    }
+
+    body#home main div {
+        margin: 50px 0px;
+    }
+
+    body#navegation .container {
+        max-width: 1300px;
+        padding: 15px;
+    }
+
+    /* PROJECTS */
+
+    #projects .container {
+        background-size: 300px;
+    }
+
+}
+
+

@@ -1,0 +1,438 @@
+
+/* MOBILE */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HOMEPAGE */
+
+html, body#home {
+	height: 100%;
+}
+
+body#home {
+    background: url(../imagens/background.jpg) center 30% / cover no-repeat;
+}
+
+header {
+    display: none;
+}
+
+body#home main {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+body#home main div {
+    background-color: rgba(43, 197, 204, 0.6);
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+body#home .head {
+    padding: 30px 10px;
+}
+
+body#home .lead {
+    padding: 20px 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body#home h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+body#home main {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+body#home main a {
+    display: block;
+    width: 75%;
+    margin: 20px auto 10px;
+    background-color: #ff6c37;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    outline: 2px solid white;
+    font-size: 18px;
+}
+
+body#home main a:hover {
+    background-color: white;
+    color: #ff6c37;
+    outline: 2px solid #ff6c37;
+}
+
+body#home .actionMenu {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+body#home .hamburguer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #2eacb3;
+    transition: 0.8s ease-in-out;
+}
+
+body#home .mobileMenu {
+    position: absolute;
+    top: 0;
+    display: block;
+    background-color: rgba(43, 197, 204, 0.8);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 0%;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+body#home .mobileMenu ul {
+    height: 100%;
+}
+
+body#home .mobileMenu ul li {
+    height: 25%;
+    position: relative;
+    font-weight: bold;
+}
+
+body#home .mobileMenu ul li:not(:last-child) {
+    border-bottom: 2px solid white;
+}
+
+body#home .mobileMenu ul li a {
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+body#home .mobileMenu ul li i {
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+}
+
+body#home .mobileMenu.open {
+    height: 80%;
+    opacity: 1;
+}
+
+/* NAVEGATION */
+
+body#navegation {
+    background-color: #E8EAF6;
+}
+
+body#navegation header {
+    display: block;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.8);
+    color: white;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+body#navegation header .desktopMenu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+body#navegation header span a {
+    color: white;
+}
+
+body#navegation header ul {
+    display: none;
+}
+
+body#navegation .menuMobile {
+    height: 0px;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    color: #37474F;
+}
+
+body#navegation .menuMobile ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body#navegation .menuMobile ul li a {
+    display: block;
+    padding: 12px 10px;
+    color: #37474F;
+}
+
+body#navegation .menuMobile ul li:not(:last-child) {
+    border-bottom: 1px solid #a6b3b9;
+}
+
+body#navegation .menuMobile ul li.active {
+    background-color: #ffcd76;
+    padding: 12px 10px;
+}
+
+body#navegation .menuMobile.open {
+    height: 176px;
+}
+
+body#navegation main {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+body#navegation h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #37474F;
+    text-transform: uppercase;
+}
+
+body#navegation .container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 10px;
+    color: #37474F;
+    line-height: 1.5;
+}
+
+body#navegation .moldure {
+    width: 200px;
+    height: 200px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+body#navegation .moldure img {
+    width: 100%;
+    height: inherit; /* altura do pai */
+    object-fit: cover;
+}
+
+body#navegation footer {
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.5);
+    padding: 20px;
+}
+
+body#navegation footer p {
+    text-align: center;
+    color: white;
+}
+
+/* ABOUT ME */
+
+body#navegation #aboutMe .moldure {
+    border: 4px solid #FFA000;
+}
+
+#aboutMe h4:not(:first-child) {
+    margin-top: 12px;
+}
+
+#aboutMe li:not(:first-child) {
+    margin-top: 8px;
+}
+
+#aboutMe li::before {
+    content: "•";
+    padding-right: 8px;
+    color: #FFA000;
+    font-size: 17px;
+}
+
+/* SKILLS */
+
+body#navegation #skills .moldure {
+    border: 4px solid #35b5e6;
+}
+
+#skills div.container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#skills h3 {
+    margin: 10px 0px 20px;
+}
+
+#skills p {
+    margin: 10px 0px 5px;
+}
+
+#skills > div:nth-child(6){
+    padding-bottom: 10px;
+}
+
+#skills > div:nth-child(6) > section {
+    overflow: auto;
+}
+
+#skills > div:nth-child(6) > section > div {
+    width: 50%;
+    text-align: center;
+}
+
+#skills > div:nth-child(6) > section > div:nth-child(1){
+    float: left;
+}
+
+#skills > div:nth-child(6) > section > div:nth-child(2){
+    float: right;
+}
+
+/* FORMATION */
+
+body#navegation #formation .moldure {
+    border: 4px solid #FFA000;
+}
+
+#formation h4 {
+    text-align: center;
+    background-color: #6cc5e9;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#formation .container i {
+    padding-right: 8px;
+}
+
+#formation span {
+    --font-style: italic;
+}
+
+#formation h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #35B5E6;
+}
+
+#formation li {
+    margin-top: 5px;
+}
+
+#formation li::before {
+    content: "•";
+    padding-right: 8px;
+    color: #FFA000;
+    font-size: 17px;
+}
+
+#formation .container p:last-child {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* PORTFÓLIO */
+
+#projects .container {
+    margin-top: 130px !important;
+}
+
+#projects img {
+    width: 100%;
+    margin: -120px auto 0px;
+}
+
+#projects h4 {
+    text-align: center;
+    background-color: #b3b3b3;
+    color: white;
+    --margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#projects > div > span:nth-child(2) {
+    font-size: 15px;
+}
+
+#projects p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #35B5E6;
+}
+
+#projects li::before {
+    content: "•";
+    padding-right: 8px;
+    color: #FFA000;
+    font-size: 17px;
+}
+
+#projects li {
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+#projects a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #FF7900;
+}
+
+#projects a:hover {
+    text-decoration: none;
+}
+
+
+
+
