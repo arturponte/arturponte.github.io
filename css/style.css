@@ -276,6 +276,7 @@ body#navegation footer {
 body#navegation footer p {
     text-align: center;
     color: white;
+    font-size: 14px;
 }
 
 /* ABOUT ME */
